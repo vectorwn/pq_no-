@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>go preguntas random?</title>
+  <style>
+    .body {
+      background-color: rgb(231, 151, 211);
+      text-align: center;
+    }
+
+    .body__title {
+      color: rgb(255, 255, 255);
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 580px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">go preguntas random?</h1>
+  <img src="https://jurassicwiki.com/images/1/13/Bumpy_Baby_%28Film_Universe%29.png" alt=":D/" class="body__img" />
+  <br>
+  <button id="yes">pq no?</button>
+  <button id="no">no, gracias</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('ya perdiste');
+      alert('MUAJAJAJAJA');
+      location.href = 'https://youtu.be/xvFZjo5PgG0?si=HOVggwAs9uv9m8Hn';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
